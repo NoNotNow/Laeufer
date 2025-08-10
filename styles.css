@@ -1,0 +1,85 @@
+.stage {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: orange;
+  z-index: -1;
+  transition-duration: 60ms;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.avatar {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-bottom: 2em solid blue;
+  transform-origin: center;
+  position: absolute;
+  z-index: 3;
+  transition: all 150ms ease-in-out;
+}
+.avatar.crash {
+  border-bottom: 2em solid red;
+}
+.stage.crash {
+  animation: shake 500ms infinite;
+  background-color: red;
+}
+
+.controls {
+  position: absolute;
+  bottom: 1em;
+}
+
+.code {
+  height: 4em;
+}
+
+button {
+  float: left;
+  margin-right: 2em;
+  margin-top: 1em;
+}
+.start {
+  clear: both;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-10em, -5em);
+  }
+  20% {
+    transform: translate(10em, 5em);
+  }
+  30% {
+    transform: translate(-10em, -5em);
+  }
+  40% {
+    transform: translate(10em, 5em);
+  }
+  50% {
+    transform: translate(-10em, -5em);
+  }
+  60% {
+    transform: translate(10em, 5em);
+  }
+  70% {
+    transform: translate(-10em, -5em);
+  }
+  80% {
+    transform: translate(10em, 5em);
+  }
+  90% {
+    transform: translate(-10em, -5em);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
