@@ -4,8 +4,33 @@
     <title>Läufer</title>
   </head>
   <body>
-    <p>
-      Hallo Vincet
-    </p>
+
+
+<div id="avatar" class="avatar"></div>
+<div class="stage" id="stage"></div>
+<div class="controls">
+
+  <textarea id="start" type="text" id="code" rows="10" class="text">go()</textarea>
+  <div class="buttons">
+    <button class="move" onpointerdown="go()">
+      go()
+    </button>
+    <button class="move left" onpointerdown="left()">
+      left()
+    </button>
+    <button class="move right" onpointerdown="right()">
+      right()
+    </button>
+    <button class="start" id="start" onpointerdown="start()">
+      START
+    </button>
+    <button class="stop" id="start" onpointerdown="stop()">
+      STOP
+    </button>
+
+  </div>
+</div>
+
+    
   </body>
 </html>
